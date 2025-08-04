@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace myTodoApi.Sqlite.Data
+﻿namespace myTodoApi.Sqlite.Data
 {
     public static class Extension
     {

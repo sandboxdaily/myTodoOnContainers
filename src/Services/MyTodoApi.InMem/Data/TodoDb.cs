@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using myTodoApi.InMem.Models;
-
-namespace myTodoApi.InMem.Data
+﻿namespace myTodoApi.InMem.Data
 {
     public class TodoDb : DbContext
     {
