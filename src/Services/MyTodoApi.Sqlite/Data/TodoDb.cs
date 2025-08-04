@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using myTodoApi.Sqlite.Models;
-
-namespace myTodoApi.Sqlite.Data
+﻿namespace myTodoApi.Sqlite.Data
 {
     public class TodoDb : DbContext
     {

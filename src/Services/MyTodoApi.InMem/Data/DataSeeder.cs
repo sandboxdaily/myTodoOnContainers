@@ -1,6 +1,4 @@
-﻿using myTodoApi.InMem.Models;
-
-namespace myTodoApi.InMem.Data
+﻿namespace myTodoApi.InMem.Data
 {
     public class DataSeeder
     {

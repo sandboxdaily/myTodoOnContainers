@@ -1,7 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using myTodoApi.Sqlite.Data;
-using myTodoApi.Sqlite.Models;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

@@ -1,7 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using myTodoApi.InMem.Data;
-using myTodoApi.InMem.Models;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

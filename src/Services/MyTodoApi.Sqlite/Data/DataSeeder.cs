@@ -1,6 +1,4 @@
-﻿using myTodoApi.Sqlite.Models;
-
-namespace myTodoApi.Sqlite.Data
+﻿namespace myTodoApi.Sqlite.Data
 {
     public class DataSeeder
     {
