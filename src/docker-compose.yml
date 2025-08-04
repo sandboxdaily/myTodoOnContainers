@@ -1,0 +1,13 @@
+services:
+  myTodoApi.inmem:
+    image: ${DOCKER_REGISTRY-}mytodo.api.inmem
+    build:
+      context: .
+      dockerfile: Services/myTodoApi.InMem/Dockerfile
+
+  myTodoApi.sqlite:
+    image: ${DOCKER_REGISTRY-}mytodo.apis.qlite
+    build:
+      context: .
+      dockerfile: Services/myTodoApi.Sqlite/Dockerfile
+

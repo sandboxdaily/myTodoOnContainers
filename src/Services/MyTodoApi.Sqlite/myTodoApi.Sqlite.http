@@ -1,0 +1,6 @@
+@myTodoApi.Sqlite_HostAddress = http://localhost:5086
+
+GET {{myTodoApi.Sqlite_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

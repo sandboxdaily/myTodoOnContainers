@@ -1,0 +1,10 @@
+Reference: https://mehmetozkaya.medium.com/create-asp-net-minimal-apis-for-single-microservice-a-hands-on-guide-4a9827157ab7
+
+
+
+
+https://www.youtube.com/watch?v=3TA9RgDA4hg
+https://www.youtube.com/watch?v=iNO3JjtbQ7Q
+
+Note:
+Entity Framework Core Tools - Library need to create migrations 
