@@ -8,3 +8,14 @@ https://www.youtube.com/watch?v=iNO3JjtbQ7Q
 
 Note:
 Entity Framework Core Tools - Library need to create migrations .
+
+
+
+
+npm uninstall -g @angular/cli
+
+
+npm install -g @angular/cli@latest
+
+
+D3v0ps920475
