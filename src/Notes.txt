@@ -7,4 +7,4 @@ https://www.youtube.com/watch?v=3TA9RgDA4hg
 https://www.youtube.com/watch?v=iNO3JjtbQ7Q
 
 Note:
-Entity Framework Core Tools - Library need to create migrations 
+Entity Framework Core Tools - Library need to create migrations .
