@@ -43,5 +43,30 @@ app.MapDelete("/todoitems/{id}", async (int id, TodoDb db) =>
         await db.SaveChangesAsync();
     }
 });
+app.MapGet("todoitems/export", (IConfiguration _config, TodoDb db) =>
+{
+    /* Print Logic */
+    var filePath = _config.GetValue<string>("ExportFile:Path");
+    var environment = _config.GetValue<string>("ASPNETCORE_ENVIRONMENT");
+    bool enabledLog;
+    bool.TryParse(_config.GetValue<string>("ExportFile:Enabled"), out enabledLog);
+
+    if (!enabledLog)
+        return;    
+
+    if (filePath != null) {
+        if (!Directory.Exists(filePath))
+            Directory.CreateDirectory(filePath);
+
+        var fileName = $"{filePath}\\todoitems_{DateTime.Now:yyyyMMdd_HHmmss}.csv";
+        db.Todos.ForEachAsync(async todo =>
+        {
+            var line = $"{todo.Id},{todo.Name},{todo.IsComplete}";
+            await File.AppendAllTextAsync(fileName, line + Environment.NewLine);
+        });
+        
+        File.AppendAllTextAsync(fileName, $"Exported Machine = {Environment.MachineName},  Environment = {environment}, FilePath = {filePath}" + Environment.NewLine);
+    }     
+});
 
 app.Run();
